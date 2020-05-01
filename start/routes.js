@@ -16,4 +16,5 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.get('/', 'DashboardController.index')
+Route.get('/word-exists', 'DictionaryController.wordExists').validator('WordExist')
+Route.post('/word-exists', 'DictionaryController.wordExists').validator('WordExist')
