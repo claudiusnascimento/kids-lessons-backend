@@ -23,6 +23,8 @@ class DictionaryCrawler {
 
 		}, word);
 
+		await browser.close();
+
 		return exists;
 	}
 
